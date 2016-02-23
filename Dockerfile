@@ -1,5 +1,4 @@
-# this also includes an install of ffmpeg for use in the platform service
-# it's offical so i'm using it, just add this dockerfile to every github repo i want to build to run in a node.js container
+#base install of ffmpeg, using node as the base for the files that will pull from this one
 FROM node:4.3
 
 # whoami
