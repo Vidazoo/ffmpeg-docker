@@ -13,5 +13,5 @@ RUN apt-get install -y time yasm nasm \
 RUN apt-get install -y libnotify-dev build-essential  libtool intltool
 RUN wget https://www.ffmpeg.org/releases/ffmpeg-3.0.tar.bz2 &&\
                 tar jxvf ffmpeg-3.0.tar.bz2 && cd ffmpeg-3.0 && \
-                ./configure --prefix=/usr && time make -j 8 && mkdir /usr/share/ffmpeg && \
+                ./configure --enable-libvorbis --enable-gpl --enable-libx264 --enable-libtheora --enable-libvpx  --prefix=/usr && time make -j 8 && mkdir /usr/share/ffmpeg && \
                 checkinstall --pkgversion=3.0.git -y && dpkg --install ffmpeg_*.deb
