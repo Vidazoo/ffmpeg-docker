@@ -1,4 +1,4 @@
-#base install of ffmpeg, using node as the base for the files that will pull from this one
+#base install of ffmpeg, using node 6.9.1 as the base for the files that will pull from this one
 FROM node:6.9.1
 
 # whoami
