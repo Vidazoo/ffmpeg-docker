@@ -1,5 +1,5 @@
 #base install of ffmpeg, using node as the base for the files that will pull from this one
-FROM node:4.3
+FROM node:6.9.1
 
 # whoami
 MAINTAINER naor livne <naorlivne@gmail.com>
